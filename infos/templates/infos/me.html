@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}About Me{% endblock %}
+{% block title %}O mnie{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container mt-4">
     <div class="row">
         <div class="col-md-8">
             <h1>O mnie</h1>
@@ -12,6 +13,6 @@
         <div class="col-md-4">
         </div>
     </div>
-    <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+    <a href="{% url 'home' %}" class="btn btn-primary mt-3">Powrót do strony głównej</a>
 </div>
 {% endblock %}

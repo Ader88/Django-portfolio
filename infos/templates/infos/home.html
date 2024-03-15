@@ -1,17 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Link do plików CSS Bootstrapa -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 </head>
 <body>
-    <h1>Home Page</h1>
-    <p>Witaj w moim portfolio!</p>
-    <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'me' %}">About Me</a></li>
-        <li><a href="{% url 'contact' %}">Contact</a></li>
-    </ul>
+    <div class="container mt-4">
+        <h1>Moje Portfolio</h1>
+        <p>Witaj w moim Portfolio!</p>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'home' %}" class="nav-link">Strona Domowa</a></li>
+            <li class="list-group-item"><a href="{% url 'me' %}" class="nav-link">O mnie</a></li>
+            <li class="list-group-item"><a href="{% url 'contact' %}" class="nav-link">Kontakt</a></li>
+        </ul>
+    </div>
+    <!-- Skrypty JavaScript Bootstrapa -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
